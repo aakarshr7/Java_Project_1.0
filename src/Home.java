@@ -14,7 +14,6 @@ public class Home implements ActionListener {
 	
 	JButton admin,tcher;
 	
-	
 	public Home() {
 		// TODO Auto-generated constructor stub
 		

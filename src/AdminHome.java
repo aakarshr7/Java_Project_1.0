@@ -28,6 +28,10 @@ public  class AdminHome implements ActionListener{
 		f.setSize(300,300);
 		f.setLayout(null);
 		f.setVisible(true);
+		ad.addActionListener(this);
+		reg.addActionListener(this);
+		update.addActionListener(this);
+		view.addActionListener(this);
 	}
 
 	public static void main(String[] args) {
@@ -38,7 +42,14 @@ public  class AdminHome implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		// TODO Auto-generated method stub
-		
+		if (arg0.getSource()==reg) {
+			f.dispose();
+			new AdStu();
+		}
+		if (arg0.getSource()==view) {
+			f.dispose();
+			new ViewStu();
+		}
 	}
 
 }
